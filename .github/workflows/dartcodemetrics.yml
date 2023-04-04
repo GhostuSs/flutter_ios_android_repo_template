@@ -17,3 +17,10 @@ jobs:
         uses: dart-code-checker/dart-code-metrics-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          folders: "bin, example, lib, test"
+          pull_request_comment: true
+          fatal_warnings: true
+          fatal_performance: true
+          fatal_style: true
+          check_unused_files: true
+          check_unused_files_folders: "bin, example, lib"
