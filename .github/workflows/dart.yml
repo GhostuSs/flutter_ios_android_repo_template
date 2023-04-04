@@ -21,8 +21,9 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       - run: flutter --version
+      - name: dart add test in dev_dependencies
+        run: dart pub add --dev test
       - name: Install Dart dependencies
         run: dart pub get
-        run: dart pub add --dev test
       - name: Run tests
         run: dart test
