@@ -1,8 +1,8 @@
-name: Dart checker
+name: Dart code checker
 
 on:
-  push:
-    branches: [ master ]
+#  push:
+#    branches: [ master ]
   pull_request:
     branches: [ master ]
 
