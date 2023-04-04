@@ -7,8 +7,8 @@ on:
       branches: [ master ]
 
 jobs:
-    build:
-      runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - uses: dart-lang/setup-dart@v1.0
