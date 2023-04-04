@@ -1,4 +1,4 @@
-name: DCM
+name: DCM checker
 
 on: [push]
 
