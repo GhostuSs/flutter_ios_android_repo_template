@@ -19,7 +19,6 @@ jobs:
         with:
           channel: 'stable'
       - run: flutter pub get
-#      - run: flutter test
       - run: flutter --version
       - name: dart add test in dev_dependencies
         run: dart pub add --dev test
