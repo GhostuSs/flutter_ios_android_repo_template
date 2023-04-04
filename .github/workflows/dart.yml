@@ -19,6 +19,10 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter --version
+      - name: dart-code-metrics
+          uses: dart-code-checker/dart-code-metrics-action@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: dart add test in dev_dependencies
         run: dart pub add --dev test
       - name: Install Dart dependencies
