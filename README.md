@@ -1,4 +1,4 @@
-# Dart Repository Template
+# Flutter (IOS/Android) Repository Template
 
 Темплейт для создания проекта с минимальным покрытием тестов с помощью Github Actions для Flutter-проектов и Dart-проектов.
 
