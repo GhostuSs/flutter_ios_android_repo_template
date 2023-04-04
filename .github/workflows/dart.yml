@@ -19,7 +19,8 @@ jobs:
           channel: 'stable'
       - uses: actions/setup-java@v2
         with:
-          java-version: '19.x'
+          distribution: 'zulu'
+          java-version: '17.x'
       - run: flutter pub get
       - run: flutter --version
       - name: dart add test in dev_dependencies
