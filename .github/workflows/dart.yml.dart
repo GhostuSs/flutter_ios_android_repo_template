@@ -15,6 +15,5 @@ jobs:
           with:
             sdk: 2.18.0
       - name: Install dependencies
-        run: dart pub get
-      - name: Run tests
-        run: dart test
+        run: dart pub get- name: Run tests
+run: dart test
