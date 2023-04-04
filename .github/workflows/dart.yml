@@ -17,11 +17,10 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-      - name: Check Flutter version
+      - run: flutter pub get
+      - run: flutter test
       - run: flutter --version
       - name: Install Dart dependencies
         run: dart pub get
-      - name: Install Flutter dependencies
-        run: flutter pub get
       - name: Run tests
         run: dart test
