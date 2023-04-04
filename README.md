@@ -1,16 +1,10 @@
-# dart_repo_template
+# Dart Repository Template
 
-A new Flutter project.
+Темплейт для создания проекта с минимальным покрытием тестов с помощью Github Actions для Flutter-проектов и Dart-проектов.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Подготовка к использованию
+### 1. Для новых проектов:
+  #### 1.1 Необходимо выполнить 'fork' данного репозитория в новый репозиторий внутри организации.
+  #### 1.2 В репозитории нового проекта сделать push.
+### 2. Для старых проектов:
+  ### UPD будет позже: возможно, в виде плагина, либо тупо инструкция
