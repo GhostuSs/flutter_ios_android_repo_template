@@ -4,7 +4,7 @@ on:
 #  push:
 #    branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, v* ]
 
 jobs:
   build:
@@ -17,6 +17,9 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+      - uses: actions/setup-java@v2
+        with:
+          java-version: '19.x'
       - run: flutter pub get
       - run: flutter --version
       - name: dart add test in dev_dependencies
@@ -29,7 +32,7 @@ jobs:
         run: dart analyze --fatal-warnings --fatal-infos .
       - name: Verify formatting
         run: dart format --set-exit-if-changed .
-      - name: dart-code-metrics
+      - name: Check /lib via Dart Code Metrics
         uses: dart-code-checker/dart-code-metrics-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -40,3 +43,5 @@ jobs:
           fatal_style: true
           check_unused_files: true
           check_unused_files_folders: "lib"
+      - name: Check Flutter build APK
+        run: flutter build apk
